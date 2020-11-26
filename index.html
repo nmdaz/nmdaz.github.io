@@ -3,6 +3,7 @@
 <head>
 	<title>Noel Daz</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/fa.css">
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
 		
 		<img class="header__logo" src="./img/logo.png">
 		
-		<p class="header__title">NOEL DAZ</p>
+		<p class="header__title animate__animated animate__fadeInUp animate__delay-2s">NOEL DAZ</p>
 
 		<nav class="navbar" id="navbar">
 			<ul class="navbar__links">
@@ -42,31 +43,27 @@
 	</section>
 
 	<section class="about">
-		<section class="greeting">
+		<div class="greeting">
 			<p class="greeting__text"><span class="quote">"</span> Hi! I am Noel M. Daz Jr. Fresh Graduate of Bachelors of Science in Information Technology <span class="quote">"</span></p>
-		</section>
+		</div>
 
-		<section class="skills">
+		<div class="skills">
 			<p class="skills__text">"Proficient or have intermediate knowledge with..."</p>
 			<p class="skills__text skills__text--small-margin">
 				PHP, HTML, Javascript, CSS, Bootsrap, As3, Laravel, Vue.js, PHPUnit, MySQL,  OOP, and MVC
 			</p>
-		</section>
+		</div>
 
-		<section class="skills--left">
+		<div class="skills--left">
 			<p class="skills__text">"And some basics stuff with..."</p>
 			<p class="skills__text skills__text--small-margin">
 				Git, Java, VB.Net, Python, Sass, NPM, Composer, C# and Unity3D
 			</p>
-		</section>
+		</div>
 	</section>
 
-	
-
-	
-
 	<section class="works">
-		<div class="works__label">Projects</div>
+		<div class="works__label">PROJECTS</div>
 		<div class="works__list">
 			<div class="works__item">
 				<img class="works__image carousel__button" src="./img/placeholder.jpg" data-carousel="carouselElearning">
@@ -117,31 +114,83 @@
 				</p>
 				<a class="works__link" href="https://drive.google.com/file/d/0B_YhZ3qPU1mKYWJETjJoUTlOZ0U/view?usp=sharing">Click to download APK</a>
 			</div>
-
 		</div>
 	</section>
 
-	<!-- <div class="carousel" id="carouselElearning" style="display: none">
-		<div class="carousel__exit" id="carouselExit">Exit</div>
+	<section class="contact">
+		<h2 class="contact__title">Contact Me</h2>
 
-		<div class="carousel__prev" id="carouselPrev">
-			Prev
+		<div class="contact__item">
+			<a href="mailto:daznoeljr@gmail.com">
+				<img class="contact__icon" src="./img/icon/gmail.png">
+			</a>
+			nmdazgames@gmail.com
 		</div>
 
-		<div class="carousel__items">
-			<img class="carousel__img" src="./img/elearning/1.jpg">
-			<img class="carousel__img" src="./img/elearning/2.jpg">
-			<img class="carousel__img" src="./img/elearning/3.jpg">
+		<div class="contact__item">
+			<a href="https://github.com/nmdaz">
+				<img class="contact__icon" src="./img/icon/github.png">
+			</a>
+			https://github.com/nmdaz
 		</div>
 
-		<div class="carousel__next" id="carouselNext">
-			Next
+		<div class="contact__item">
+			<a href="https://facebook.com/daznoeljr">
+				<img class="contact__icon" src="./img/icon/fb.png">
+			</a>
+			facebook.com/daznoeljr
 		</div>
-	</div> -->
+	</section>
 
+	<div class="footer">
+		<div class="footer__column">
+			<div class="footer__centerer">
+				<img class="footer__logo" src="./img/logo.png">
+				<h4 class="footer__title">Noel M. Daz Jr.</h4>
+			</div>
+		</div>
 
+		<div class="footer__column">
+			<div class="footer__centerer">
+				<h4 class="footer__title">Postion Applying</h4>
+				<p class="footer__item">Software Engineer</p>
+				<p class="footer__item">Web Developer</p>
+				<p class="footer__item">Game Developer</p>
+			</div>
+		</div>
 
+		<div class="footer__column">
+			<div class="footer__centerer footer__centerer--align">
+				<h4 class="footer__title">Contacts</h4>
+				<p class="footer__item">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</p>
+				<p class="footer__item">
+					<i class="fa fa-github" aria-hidden="true"></i>
+				</p>
+				<p class="footer__item">
+					<i class="fa fa-facebook-official" aria-hidden="true"></i>
+				</p>
+			</div>
+		</div>
+		
+		<div class="footer__column">
+			<div class="footer__centerer">
+				<h4 class="footer__title">Projects</h4>
+				<p class="footer__item">E-Learning</p>
+				<p class="footer__item">Face It</p>
+				<p class="footer__item">Kontra Droga</p>
+				<p class="footer__item">Super Mega Starboy</p>
+				<p class="footer__item">Jump Fox</p>
+			</div>
+		</div>
+	</div>
 
+	<footer class="main-footer">
+		<i class="fa fa-copyright main-footer__fa" aria-hidden="true"></i> NOEL DAZ JR
+	</footer>
+
+	
 
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
