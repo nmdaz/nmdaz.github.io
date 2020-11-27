@@ -329,3 +329,13 @@ html {
 		margin-top: 2rem;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.navbar {
+		font-size: .9rem;
+	}
+
+	.navbar__item {
+		margin-right: 1.5rem;
+	}
+}

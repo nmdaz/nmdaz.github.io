@@ -8,19 +8,27 @@
 </head>
 <body>
 
-	<header class="header">
-		
+	<header class="header" id="home">
 		<img class="header__logo" src="./img/logo.png">
-		
 		<p class="header__title animate__animated animate__fadeInUp animate__delay-2s">NOEL DAZ</p>
 
 		<nav class="navbar" id="navbar">
 			<ul class="navbar__links">
-				<li class="navbar__item">HOME</li>
-				<li class="navbar__item">ABOUT</li>
-				<li class="navbar__item">SKILLS</li>
-				<li class="navbar__item">WORKS</li>
-				<li class="navbar__item">CONTACT</li>
+				<li class="navbar__item">
+					<a href="#home">HOME</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#about">ABOUT</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#projects">PROJECTS</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#contact">CONTACTS</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#footer">QUICK LINKS</a>
+				</li>
 			</ul>
 		</nav>
 
@@ -42,7 +50,7 @@
 		</div>
 	</section>
 
-	<section class="about">
+	<section class="about" id="about">
 		<div class="greeting">
 			<p class="greeting__text"><span class="quote">"</span> Hi! I am Noel M. Daz Jr. Fresh Graduate of Bachelors of Science in Information Technology <span class="quote">"</span></p>
 		</div>
@@ -62,27 +70,29 @@
 		</div>
 	</section>
 
-	<section class="works">
+	<section class="works" id="projects">
 		<div class="works__label">PROJECTS</div>
 		<div class="works__list">
 			<div class="works__item">
 				<img class="works__image carousel__button" src="./img/placeholder.jpg" data-carousel="carouselElearning">
 				<h2 class="works__title">E-learning</h2>
-				<p class="works__stacks">Vue.js Laravel Test Driven Development</p>
+				<p class="works__stacks">Vue.js SPA Laravel Test Driven Development</p>
 				<p class="works__description">
 					Web app where you can create your own course or enrolled to courses made by other users.
 				</p>
-				<a class="works__link" href="">Click to view source code</a>
+				<a class="works__link" href="https://github.com/nmdaz/elearning-backend" target="_blank">Click to view back-end source code</a>
+				<a class="works__link" href="https://github.com/nmdaz/elearning-frontend" target="_blank">Click to view front-end source code</a>
 			</div>
 			
 			<div class="works__item">
-				<img class="works__image" src="./img/doorlock.jpg">
+				<!-- <img class="works__image" src="./img/doorlock.jpg"> -->
+				<iframe class="works__video" src="https://www.youtube.com/embed/lmXkY1YBXvc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<h2 class="works__title">Face It</h2>
 				<p class="works__stacks">OpenCV Python Raspberry Pi</p>
 				<p class="works__description">
 					School Thesis. Door lock system that use Facial Recognition and QR Code.
 				</p>
-				<a class="works__link" href="">Click to view source code</a>
+				<a class="works__link" target="_blank" href="https://github.com/nmdaz/facein">Click to view source code</a>
 			</div>
 
 			<div class="works__item">
@@ -102,7 +112,7 @@
 				<p class="works__description">
 					2d Platformer Shooter Game for Android
 				</p>
-				<a class="works__link" href="https://drive.google.com/file/d/1WMGma2qbXaCCX4GlfzSlZJSeIQhd19ve/view?usp=sharing">Click to download APK</a>
+				<a class="works__link" href="https://drive.google.com/file/d/1WMGma2qbXaCCX4GlfzSlZJSeIQhd19ve/view?usp=sharing" target="_blank">Click to download APK</a>
 			</div>
 
 			<div class="works__item">
@@ -112,12 +122,12 @@
 				<p class="works__description">
 					Web app where you can create your own course or enrolled to courses made by other users.
 				</p>
-				<a class="works__link" href="https://drive.google.com/file/d/0B_YhZ3qPU1mKYWJETjJoUTlOZ0U/view?usp=sharing">Click to download APK</a>
+				<a class="works__link" href="https://drive.google.com/file/d/0B_YhZ3qPU1mKYWJETjJoUTlOZ0U/view?usp=sharing" target="_blank">Click to download APK</a>
 			</div>
 		</div>
 	</section>
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<h2 class="contact__title">Contact Me</h2>
 
 		<div class="contact__item">
@@ -128,21 +138,21 @@
 		</div>
 
 		<div class="contact__item">
-			<a href="https://github.com/nmdaz">
+			<a href="https://github.com/nmdaz" target="_blank">
 				<img class="contact__icon" src="./img/icon/github.png">
 			</a>
 			https://github.com/nmdaz
 		</div>
 
 		<div class="contact__item">
-			<a href="https://facebook.com/daznoeljr">
+			<a href="https://facebook.com/daznoeljr" target="_blank">
 				<img class="contact__icon" src="./img/icon/fb.png">
 			</a>
 			facebook.com/daznoeljr
 		</div>
 	</section>
 
-	<div class="footer">
+	<div class="footer" id="footer">
 		<div class="footer__column">
 			<div class="footer__centerer">
 				<img class="footer__logo" src="./img/logo.png">
@@ -152,7 +162,7 @@
 
 		<div class="footer__column">
 			<div class="footer__centerer">
-				<h4 class="footer__title">Postion Applying</h4>
+				<h4 class="footer__title">Positions Applying</h4>
 				<p class="footer__item">Software Engineer</p>
 				<p class="footer__item">Web Developer</p>
 				<p class="footer__item">Game Developer</p>
@@ -163,13 +173,19 @@
 			<div class="footer__centerer footer__centerer--align">
 				<h4 class="footer__title">Contacts</h4>
 				<p class="footer__item">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<a href="mailto:daznoeljr@gmail.com">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</a>
 				</p>
 				<p class="footer__item">
-					<i class="fa fa-github" aria-hidden="true"></i>
+					<a href="https://github.com/nmdaz" target="_blank">
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
 				</p>
 				<p class="footer__item">
-					<i class="fa fa-facebook-official" aria-hidden="true"></i>
+					<a href="https://facebook.com/daznoeljr" target="_blank">
+						<i class="fa fa-facebook-official" aria-hidden="true"></i>
+					</a>
 				</p>
 			</div>
 		</div>
@@ -177,11 +193,21 @@
 		<div class="footer__column">
 			<div class="footer__centerer">
 				<h4 class="footer__title">Projects</h4>
-				<p class="footer__item">E-Learning</p>
-				<p class="footer__item">Face It</p>
-				<p class="footer__item">Kontra Droga</p>
-				<p class="footer__item">Super Mega Starboy</p>
-				<p class="footer__item">Jump Fox</p>
+				<p class="footer__item">
+					<a href="https://github.com/nmdaz/elearning-backend" target="_blank">E-Learning</a>
+				</p>
+				<p class="footer__item">
+					<a href="https://github.com/nmdaz/facein" target="_blank">FaceIt</a>
+				</p>
+				<p class="footer__item">
+					<a href="https://play.google.com/store/apps/details?id=air.kontradrogaduterteatbato&hl=en&gl=US" target="_blank">Kontra Droga</a>
+				</p>
+				<p class="footer__item">
+					<a href="https://drive.google.com/file/d/1WMGma2qbXaCCX4GlfzSlZJSeIQhd19ve/view?usp=sharing" target="_blank">Super Mega Starboy</a>
+				</p>
+				<p class="footer__item">
+					<a href="https://drive.google.com/file/d/0B_YhZ3qPU1mKYWJETjJoUTlOZ0U/view?usp=sharing" target="_blank">Jump Fox</a>
+				</p>
 			</div>
 		</div>
 	</div>
