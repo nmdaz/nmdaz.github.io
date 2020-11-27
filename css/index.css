@@ -1,4 +1,16 @@
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto.ttf) format('truetype') font-weight-normal,
+       url(../fonts/RobotoBold.otf) format('truetype') font-weight-bold,
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans.ttf) format('truetype') font-weight-normal,
+       url(../fonts/OpenSans.otf) format('truetype') font-weight-bold,
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -14,7 +26,7 @@ a {
 
 html {
 	font-size: 16px;
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: .02rem;
 }
 
