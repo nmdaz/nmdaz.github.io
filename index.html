@@ -4,6 +4,7 @@
 	<title>Noel Daz</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
 
@@ -43,43 +44,62 @@
 		<img id="avatar" class="header__avatar" src="./img/pic.png">
 	</header>
 
-	<section class="skills-preview">
-		<div class="skills-preview__item">
-			<img class="skills-preview__image" src="./img/skill1.png">
-			<p class="skills-preview__text">Desktop Application</p>
-		</div>
-		<div class="skills-preview__item">
-			<img class="skills-preview__image" src="./img/skill2.png">
-			<p class="skills-preview__text">Web Development</p>
-		</div>
-		<div class="skills-preview__item">
-			<img class="skills-preview__image" src="./img/skill3.png">
-			<p class="skills-preview__text">Game Development</p>
-		</div>
-	</section>
+	<div class="parallax">	
+		<section class="skills-preview">
+			<div class="skills-preview__item">
+				<img class="skills-preview__image" src="./img/skill1.png">
+				<p class="skills-preview__text">Desktop Application</p>
+			</div>
+			<div class="skills-preview__item">
+				<img class="skills-preview__image" src="./img/skill2.png">
+				<p class="skills-preview__text">Web Development</p>
+			</div>
+			<div class="skills-preview__item">
+				<img class="skills-preview__image" src="./img/skill3.png">
+				<p class="skills-preview__text">Game Development</p>
+			</div>
+		</section>
 
-	<section class="about" id="about">
+		<section class="about" id="about">
+			<div class="about__title">ABOUT ME</div>
 
-		<div class="about__title">ABOUT ME</div>
+			<div class="greeting">
+				<p class="greeting__text">
+					<i class="fa fa-quote-left fa-xl"></i> Hi! I am Noel M. Daz Jr. Fresh Graduate of Bachelors of Science in Information Technology <i class="fa fa-quote-right fa-xl"></i>
+				</p>
+			</div>
 
-		<div class="greeting">
-			<p class="greeting__text"><span class="quote">"</span> Hi! I am Noel M. Daz Jr. Fresh Graduate of Bachelors of Science in Information Technology <span class="quote">"</span></p>
-		</div>
+			<div class="skills">
+				<p class="skills__text">"Proficient or have intermediate knowledge with..."</p>
+				<div class="icon-set">
+					<i class="fab fa-laravel icon-set__item"></i>
+					<i class="fab fa-js icon-set__item"></i>
+					<i class="fab fa-css3-alt icon-set__item"></i>
+					<i class="fab fa-bootstrap icon-set__item"></i>
+					<i class="fa fa-database icon-set__item"></i>
+					<i class="fab fa-html5 icon-set__item"></i>
+					<i class="fab fa-vuejs icon-set__item"></i>
+					<i class="fab fa-php icon-set__item"></i>
+				</div>
+				<p class="skills__text skills__text--big">...and Testing, OOP, MVC and Actionscript 3</p>
+			</div>
 
-		<div class="skills">
-			<p class="skills__text">"Proficient or have intermediate knowledge with..."</p>
-			<p class="skills__text skills__text--small-margin">
-				PHP, HTML, Javascript, CSS, Bootsrap, As3, Laravel, Vue.js, PHPUnit, MySQL,  OOP, and MVC
-			</p>
-		</div>
+			<div class="skills">
+				<p class="skills__text">"And some basics stuff with..."</p>
+				<div class="icon-set">
+					<i class="fab fa-github icon-set__item"></i>
+					<i class="fab fa-java icon-set__item"></i>
+					<i class="fab fa-python icon-set__item"></i>
+					<i class="fab fa-sass icon-set__item"></i>
+					<i class="fab fa-npm icon-set__item"></i>
+					<i class="fab fa-unity-3d icon-set__item"></i>
+				</div>
+				<p class="skills__text skills__text--big">...and VB.Net, NPM, Composer, and C#</p>
+			</div>
+		</section>
+	</div>
 
-		<div class="skills--left">
-			<p class="skills__text">"And some basics stuff with..."</p>
-			<p class="skills__text skills__text--small-margin">
-				Git, Java, VB.Net, Python, Sass, NPM, Composer, C# and Unity3D
-			</p>
-		</div>
-	</section>
+	
 
 	<section class="works" id="projects">
 		<div class="works__label">PROJECTS</div>
@@ -88,9 +108,9 @@
 				<img class="works__image carousel__button" src="./img/placeholder.jpg" data-carousel="carouselElearning">
 				<div>	
 					<h2 class="works__title">E-learning</h2>
-					<p class="works__stacks">Vue.js SPA Laravel Test Driven Development</p>
+					<p class="works__stacks">Vue.js, SPA, Laravel, TDD, Rest API</p>
 					<p class="works__description">
-						Web app where you can create your own course or enrolled to courses made by other users.
+						Web app where you can create your own course or enroll to courses made by other users.
 					</p>
 					<a class="works__link" href="https://github.com/nmdaz/elearning-backend" target="_blank">Click to view back-end source code</a>
 					<a class="works__link mt-0" href="https://github.com/nmdaz/elearning-frontend" target="_blank">Click to view front-end source code</a>
@@ -98,11 +118,10 @@
 			</div>
 			
 			<div class="works__item">
-				<!-- <img class="works__image" src="./img/doorlock.jpg"> -->
 				<iframe class="works__video" src="https://www.youtube.com/embed/lmXkY1YBXvc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<div>	
 					<h2 class="works__title">Face It</h2>
-					<p class="works__stacks">OpenCV Python Raspberry Pi</p>
+					<p class="works__stacks">OpenCV, Python and Raspberry Pi</p>
 					<p class="works__description">
 						School Thesis. Door lock system that use Facial Recognition and QR Code.
 					</p>
@@ -135,7 +154,7 @@
 			</div>
 
 			<div class="works__item">
-				<iframe class="works__video" src="https://drive.google.com/file/d/0B_YhZ3qPU1mKNk42ejZfa2xPdGM/preview"></iframe>
+				<iframe class="works__video" src="https://www.youtube.com/embed/Gd-dK4aUHqE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<div>	
 					<h2 class="works__title">Jump Fox</h2>
 					<p class="works__stacks">Unity C# Android Game Google Play Games and Admob API</p>
@@ -148,7 +167,7 @@
 		</div>
 	</section>
 
-	<section class="contact" id="contact">
+	<section class="contact parallax" id="contact">
 		<h2 class="contact__title">Contact Me</h2>
 
 		<div class="contact__item">
@@ -239,7 +258,6 @@
 
 	
 
-<script src="https://kit.fontawesome.com/b0d482a303.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
