@@ -179,16 +179,21 @@ html {
 }
 
 .works__image {
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
+	min-height: 300px;
+	object-fit: cover;
 }
 
 .works__carousel {
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
 }
 
 .works__video {
-	width: 400px;
-	height: 250px;
+	width: 100%;
+	max-width: 400px;
+	min-height: 300px;
 	border: none;
 }
 
@@ -345,9 +350,47 @@ html {
 @media only screen and (max-width: 600px) {
 	.navbar {
 		font-size: .9rem;
+	    padding-top: .5rem;
+	    padding-bottom: .5rem;
 	}
 
 	.navbar__item {
 		margin-right: 1.5rem;
+	}
+
+	.works__item {
+		width: 100%;
+		text-align:	center;
+	}
+
+	.works__video {
+		min-height: auto;
+		width: 100%;
+	}
+
+	.works__image {
+		min-height: auto;
+		width: 100%;
+	}
+}
+
+
+@media only screen and (min-width: 390px) {
+	.navbar {
+		font-size: .7rem;
+	}
+
+	.greeting__text {
+		padding: 1rem;
+		font-size: 1rem;
+	}
+
+	.skills-preview__item {
+	    margin-bottom: 2rem;
+	}
+
+	.skills-preview {
+	    margin-bottom: 5rem;
+	    flex-wrap: wrap;
 	}
 }
