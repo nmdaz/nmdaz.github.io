@@ -442,4 +442,8 @@ html {
 	.skills__text--small-margin {
 		font-size: .9rem;
 	}
+
+	.footer {
+		padding: 1rem;
+	}
 }
