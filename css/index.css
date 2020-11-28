@@ -176,6 +176,11 @@ html {
 .works__item {
 	margin-bottom: 2rem;
 	padding: 2rem 1rem 1rem 1rem;
+	flex-grow: .5;
+    flex-shrink: .5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .works__image {
@@ -321,6 +326,10 @@ html {
 		max-width: 350px;
 	}
 
+	.works__item {
+		width: 50%;
+	}
+
 	.skills, .skills--left {
 		margin-left: auto;
 		margin-right: auto;
@@ -375,9 +384,13 @@ html {
 }
 
 
-@media only screen and (min-width: 390px) {
+@media only screen and (max-width: 390px) {
 	.navbar {
 		font-size: .7rem;
+	}
+
+	.navbar__item {
+		margin-right: 1rem;
 	}
 
 	.greeting__text {
@@ -392,5 +405,9 @@ html {
 	.skills-preview {
 	    margin-bottom: 5rem;
 	    flex-wrap: wrap;
+	}
+
+	.skills__text--small-margin {
+		font-size: .9rem;
 	}
 }
