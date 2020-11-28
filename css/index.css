@@ -430,16 +430,21 @@ html {
 		font-size: 1rem;
 	}
 
-	.skills-preview__item {
+	.skills-preview__item:not(:last-child) {
 	    margin-bottom: 2rem;
 	}
 
 	.skills-preview {
-	    margin-bottom: 5rem;
+	    margin-bottom: 0;
+	    padding-bottom: 0;
 	    flex-wrap: wrap;
 	}
 
 	.skills__text--small-margin {
 		font-size: .9rem;
+	}
+
+	.footer {
+		padding: 1rem;
 	}
 }
