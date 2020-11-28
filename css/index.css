@@ -35,7 +35,7 @@ html {
 }
 
 .header {
-	background-color: #3d2c32;
+	background-color: #2f2c3d;
 	text-align: center;
 	overflow: visible;
 }
@@ -68,7 +68,7 @@ html {
 .navbar--alt {
 	position: fixed;
 	width: 100%;
-	background-color: #3d2c32f5;
+	background-color: #2f2c3df5;
 	padding: 1rem;
 	top: 0;
 	z-index: 1000;
@@ -184,9 +184,10 @@ html {
 
 
 .works {
-	background-color: #3d2c32;
+	background-color: #2f2c3d;
 	color: #eaac63;
 	font-family: 'Open Sans';
+	padding: 2rem;
 }
 
 .works__label {
@@ -213,23 +214,21 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 400px;
 }
 
 .works__image {
 	width: 100%;
-	max-width: 400px;
 	min-height: 300px;
 	object-fit: cover;
 }
 
-.works__carousel {
+.works__content {
 	width: 100%;
-	max-width: 400px;
 }
 
 .works__video {
 	width: 100%;
-	max-width: 400px;
 	min-height: 300px;
 	border: none;
 }
@@ -285,7 +284,7 @@ html {
 }
 
 .footer {
-	background-color: #3d2c32;
+	background-color: #2f2c3d;
     padding: 2rem;
     font-size: .8rem;
     color: #eaac63;
@@ -328,7 +327,7 @@ html {
 }
 
 .main-footer {
-	background-color: #333;
+	background-color: #2f2d2d;
 	font-size: .65rem;
 	color: white;
 	padding: .4rem;
