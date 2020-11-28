@@ -30,6 +30,10 @@ html {
 	letter-spacing: .02rem;
 }
 
+.mt-0 {
+	margin-top: 0 !important;
+}
+
 .header {
 	background-color: #3d2c32;
     background-image: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%2356464c' fill-opacity='0.04'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E);
@@ -135,6 +139,7 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: auto;
+	padding: 2rem;
 }
 
 .greeting {
@@ -395,7 +400,8 @@ html {
 
 	.works__item {
 		width: 100%;
-		text-align:	center;
+		text-align:	left;
+		padding: 1.5rem;
 	}
 
 	.works__video {
