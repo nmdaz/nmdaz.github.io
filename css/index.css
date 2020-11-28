@@ -71,6 +71,15 @@ html {
 	z-index: 1000;
 }
 
+.navbar--alt .navbar__text {
+	display: none;
+}
+
+.navbar--alt .navbar__icon {
+	font-size: 2rem;
+	margin-right: 1rem;
+}
+
 .navbar__links {
 	display: flex;
 	justify-content: center;
@@ -78,6 +87,15 @@ html {
 
 .navbar__item {
 	margin-right: 2rem;
+}
+
+.navbar__link {
+	display: flex;
+	align-items: center;
+}
+
+.navbar__icon {
+	margin-right: .25rem;
 }
 
 .header__avatar {
@@ -290,13 +308,13 @@ html {
 	font-family: Roboto;
 }
 
-.fa {
-	font-size: 1.5rem;
+.footer__icon {
+	margin-bottom: 	.25rem;
 }
 
 .main-footer {
 	background-color: #333;
-	font-size: .7rem;
+	font-size: .65rem;
 	color: white;
 	padding: .4rem;
 	text-align: center;
@@ -365,6 +383,14 @@ html {
 
 	.navbar__item {
 		margin-right: 1.5rem;
+	}
+
+	.navbar__link {
+	    flex-direction: column;
+	}
+
+	.navbar__icon {
+		margin-bottom: .25rem;
 	}
 
 	.works__item {

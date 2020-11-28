@@ -3,7 +3,6 @@
 <head>
 	<title>Noel Daz</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./css/fa.css">
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
 <body>
@@ -15,16 +14,28 @@
 		<nav class="navbar" id="navbar">
 			<ul class="navbar__links">
 				<li class="navbar__item">
-					<a href="#home">HOME</a>
+					<a class="navbar__link" href="#home">
+						<i class="fa fa-home fa-lg navbar__icon"></i>
+						<span class="navbar__text">HOME</span>
+					</a>
 				</li>
 				<li class="navbar__item">
-					<a href="#about">ABOUT</a>
+					<a class="navbar__link" href="#about">
+						<i class="fa fa-user fa-lg navbar__icon"></i>
+						<span class="navbar__text">ABOUT</span>
+					</a>
 				</li>
 				<li class="navbar__item">
-					<a href="#projects">PROJECTS</a>
+					<a class="navbar__link" href="#projects">
+						<i class="fa fa-file-code fa-lg navbar__icon"></i>
+						<span class="navbar__text">PROJECTS</span>
+					</a>
 				</li>
 				<li class="navbar__item">
-					<a href="#contact">CONTACTS</a>
+					<a class="navbar__link" href="#contact">
+						<i class="fa fa-address-book fa-lg navbar__icon"></i>
+						<span class="navbar__text">CONTACT</span>
+					</a>
 				</li>
 			</ul>
 		</nav>
@@ -181,17 +192,17 @@
 				<h4 class="footer__title">Contacts</h4>
 				<p class="footer__item">
 					<a href="mailto:daznoeljr@gmail.com">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<i class="fa fa-lg fa-envelope footer__icon" aria-hidden="true"></i>
 					</a>
 				</p>
 				<p class="footer__item">
 					<a href="https://github.com/nmdaz" target="_blank">
-						<i class="fa fa-github" aria-hidden="true"></i>
+						<i class="fab fa-lg fa-github footer__icon" aria-hidden="true"></i>
 					</a>
 				</p>
 				<p class="footer__item">
 					<a href="https://facebook.com/daznoeljr" target="_blank">
-						<i class="fa fa-facebook-official" aria-hidden="true"></i>
+						<i class="fab fa-facebook fa-lg footer__icon" aria-hidden="true"></i>
 					</a>
 				</p>
 			</div>
@@ -225,6 +236,7 @@
 
 	
 
+<script src="https://kit.fontawesome.com/b0d482a303.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
