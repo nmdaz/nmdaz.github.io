@@ -55,6 +55,8 @@ html {
     margin-left: 4px;
 }
 
+
+
 .navbar {
 	font-size: 1rem;
 	font-family: "Open Sans";
@@ -62,7 +64,6 @@ html {
 	color: #eaac63;
 	margin-bottom: 1rem;
 	background-color: transparent;
-	transition: background-color 0.5s ease;
 }
 
 .navbar--alt {
@@ -70,12 +71,18 @@ html {
 	width: 100%;
 	background-color: #2f2c3df5;
 	padding: 1rem;
-	top: 0;
-	z-index: 1000;
+	top: -46px;
+	z-index: 5000;
 }
 
-.navbar--alt .navbar__text {
-	display: none;
+.navbar--show {
+	top: 0;
+	transition: top .5s ease;
+}
+
+.navbar--hide {
+	top: -200px;
+	transition: top .5s ease;
 }
 
 .navbar--alt .navbar__icon {
